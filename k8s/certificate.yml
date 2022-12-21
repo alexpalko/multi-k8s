@@ -2,13 +2,13 @@ apiVersion: cert-manager.io/v1
 
 kind: Certificate
 metadata:
-  name: yourdomain-com-tls
+  name: alexpalko-com-tls
 spec:
-  secretName: yourdomain-com
+  secretName: alexpalko-com
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: yourdomain.com
+  commonName: alexpalko.com
   dnsNames:
-    - yourdomain.com
-    - www.yourdomain.com
+    - alexpalko.com
+    - www.alexpalko.com
